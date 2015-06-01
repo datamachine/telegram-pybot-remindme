@@ -1,4 +1,4 @@
-import plugintypes
+from telegrambot.plugin import TelegramPlugin
 from DatabaseMixin import DatabaseMixin, DbType
 import tgl
 import time
@@ -7,7 +7,7 @@ import parsedatetime.parsedatetime as pdt
 import threading
 
 
-class RemindMePlugin(plugintypes.TelegramPlugin, DatabaseMixin):
+class RemindMePlugin(TelegramPlugin, DatabaseMixin):
     """
     Register a reminder with the bot
     """
