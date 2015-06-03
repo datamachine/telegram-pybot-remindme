@@ -3,7 +3,7 @@
     "description": "Register a reminder with the bot",
     "version": "1.1",
     "default_enable": ["RemindMe"],
-    "homepage": "https://github.com/datamachine/telegram-pybot-remindme",
-    "repo": "https://github.com/datamachine/telegram-pybot-remindme.git",
+    "homepage": "https://github.com/datamachine/telex-remindme",
+    "repo": "https://github.com/datamachine/telex-remindme.git",
     "branch": "master"
 }

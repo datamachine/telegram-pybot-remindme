@@ -5,5 +5,5 @@ Module = remindme
 [Documentation]
 Author = Vincent Castellano
 Version = 1.0
-Website = https://github.com/datamachine/telegram-pybot-remindme
+Website = https://github.com/datamachine/telex-remindme
 Description = Register a reminder with the bot
