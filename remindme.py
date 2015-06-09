@@ -39,7 +39,7 @@ class RemindMePlugin(TelexPlugin, DatabaseMixin):
         date = msg.date
         remind_date = pdt.Calendar().parse(message)
         remind_date = time.strftime('%Y-%m-%d %H:%M:%S', remind_date[0])
-
+        timezone = 'PDT'
         self.insert(timestamp=msg.date,
                     remindtime=remind_date,
                     chat_id=self.bot.get_peer_to_send(msg).id,
@@ -48,7 +48,7 @@ class RemindMePlugin(TelexPlugin, DatabaseMixin):
                     msg=msg.text
         )
 
-        return "Will remind @{} at {}".format(msg.src.username, remind_date)
+        return "Will remind @{} at {}({})".format(msg.src.username, remind_date, timezone)
 
 
     def check_reminder(self):
